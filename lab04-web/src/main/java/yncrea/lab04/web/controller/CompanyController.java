@@ -17,10 +17,11 @@ public class CompanyController {
         this.companyService = companyService;
     }
 
-    @RequestMapping(value="/list")
-    public String getListOfCompanies(ModelMap modelMap){
-        List<Company> companies = companyService.findAllWithProjects();
-       modelMap.addAttribute("companiesList",companies);
+    @RequestMapping("/list")
+    public String getListOfCompanies(ModelMap modelMap) {
+
+        List<Company> companiesList = companyService.findAllWithProjects();
+        modelMap.put("companies", companiesList);
         return "companiesList";
     }
 }

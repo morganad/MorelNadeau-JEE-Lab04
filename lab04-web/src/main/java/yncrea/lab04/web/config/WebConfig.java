@@ -9,10 +9,9 @@ import org.springframework.web.servlet.config.annotation.EnableWebMvc;
 import org.springframework.web.servlet.config.annotation.ResourceHandlerRegistry;
 import org.springframework.web.servlet.config.annotation.WebMvcConfigurer;
 
-
-@Configuration
 @EnableWebMvc
-@ComponentScan("yncrea.lab04.web.controller")
+@Configuration
+@ComponentScan(basePackages = "yncrea.lab04.web.controller")
 public class WebConfig implements WebMvcConfigurer {
 
     @Override
@@ -25,6 +24,7 @@ public class WebConfig implements WebMvcConfigurer {
         VelocityConfigurer velocityConfigurer = new VelocityConfigurer();
         velocityConfigurer.setResourceLoaderPath("/WEB-INF/velocity");
         return velocityConfigurer;
+
     }
 
     @Bean

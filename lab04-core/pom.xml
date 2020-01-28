@@ -38,14 +38,9 @@
             <artifactId>javax.inject</artifactId>
             <version>1</version>
         </dependency>
-        <dependency>
-            <groupId>com.shield-solutions</groupId>
-            <artifactId>spring-velocity-adapter</artifactId>
-            <version>1.0.0.RELEASE</version>
-            <scope>compile</scope>
-        </dependency>
 
 
+        
     </dependencies>
 
 
