@@ -1,4 +1,4 @@
-# Lab 04
+# Lab 04 MOREL Vincent et NADEAU Morgane
 
 ## Intro
 Several goals for this homework:
